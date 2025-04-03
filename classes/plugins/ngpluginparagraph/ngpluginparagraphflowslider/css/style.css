@@ -1,0 +1,123 @@
+.ngparaflowsliderstage {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: black;
+}
+.ngparaflowslidercontainer {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ngparaflowslidercontainer>span {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  transition: transform 1.5s;
+}
+
+.ngparaflowslidercontainer img {
+  display: block;
+  position: absolute;
+  border: 0;
+}
+
+.ngparaflowsliderb span {
+  color: #ffffff;
+}
+
+.ngparaflowsliderd span {
+  color: #000000;
+}
+
+
+.ngparaflowsliderprev {
+  width: 32px;
+  height: 32px;
+}
+.ngparaflowsliderprev, .ngparaflowslidernext {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  z-index: 10;
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+.ngparaflowsliderprev:hover, .ngparaflowslidernext:hover {
+  opacity: 1;
+}
+.ngparaflowsliderdirect {
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  bottom: 20px;
+  margin-left: -100px;
+  left: 50%;
+  z-index: 10;
+}
+.ngparaflowsliderdirect a {
+  display: block;
+  width: 50px;
+  height: 20px;
+  float: left;
+  position: relative;
+}
+.ngparaflowsliderdirect a>div {
+  height: 2px;
+  width: 40px;
+  position: absolute;
+  top: 9px;
+  left: 5px;
+  transition: background-color 1s;
+  opacity: 0.8;
+}
+
+.ngparaflowsliderb .ngparaflowsliderdirect a>div {
+  background-color: #ffffff;
+}
+
+.ngparaflowsliderd .ngparaflowsliderdirect a>div {
+  background-color: #000000;
+}
+
+.ngparaflowsliderdirect .ngparaflowsliderdirectcurrent>div {
+  background-repeat: no-repeat;
+  background-position: -40px 0;
+}
+
+.ngparaflowsliderb .ngparaflowsliderdirect .ngparaflowsliderdirectcurrent>div {
+  background-image: url(../img/barb.svg);
+  background-color: #999999;
+}
+
+.ngparaflowsliderd .ngparaflowsliderdirect .ngparaflowsliderdirectcurrent>div {
+  background-image: url(../img/bard.svg);
+  background-color: #666666;
+}
+
+.ngparaflowsliderstage .ngparaflowsliderprev {
+  left: 20px;
+}
+.ngparaflowsliderstage .ngparaflowslidernext {
+  right: 20px;
+}
+
+.sqr .sqrallwaysfullwidth .ngparaflowsliderstage {
+	border-left-width: 0px !important;
+	border-right-width: 0px !important;
+}
+
+@media (max-width: 1023px) {
+	.sqr .sqrmobilefullwidth .ngparaflowsliderstage {
+		border-left-width: 0px !important;
+		border-right-width: 0px !important;
+	}
+}

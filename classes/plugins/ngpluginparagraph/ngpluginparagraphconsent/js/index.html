@@ -1,0 +1,98 @@
+(function ($) {
+    'use strict';
+    $.fn.ngConsent = function () {
+        var that = $(this),
+            items = $(this).find('a.ngparaconsenttoggleconsent'),
+            buttonAll= $(this).find('.ngparaconsentall'),
+            buttonNone = $(this).find('.ngparaconsentnone');
+
+
+        function getCookie(name) {
+            name += '=';
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1);
+                if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
+            }
+            return undefined;
+        }
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = 'expires=' + d.toUTCString();
+            document.cookie = cname + '=' + cvalue + '; ' + expires + '; path=/; SameSite=Strict; Secure';
+        }
+
+        function toggleConsent(e) {
+            e.preventDefault();
+
+            $(this).toggleClass('ngparaconsentactive');
+
+            updateCookie();
+        }
+
+        function updateCookie() {
+            var cookiedata='',
+                selectedItems = items.filter('.ngparaconsentactive'),
+                i;
+
+            for(i=0;i<selectedItems.length;i++) {
+                var selectItem = selectedItems.eq(i),
+                    id=selectItem.attr('data-id');
+
+                if (cookiedata!=='') cookiedata+=',';
+                cookiedata+=id;
+            }
+
+            setCookie('ngcc',cookiedata, 360);
+        }
+
+        function updateDisplay() {
+            var cookiedata = getCookie('ngcc');
+
+            if (cookiedata === '*') {
+                items.addClass('ngparaconsentactive');
+            } else if (cookiedata !== undefined) {
+                var parts = cookiedata.split(','),
+                    i;
+
+                for (var i = 0; i < items.length; i++) {
+                    var item = items.eq(i),
+                        id = item.attr('data-id');
+
+                    if (cookiedata.indexOf(id)===-1) {
+                        item.removeClass('ngparaconsentactive');
+                    } else {
+                        item.addClass('ngparaconsentactive');
+                    }
+                }
+            }
+            updateCookie();
+        }
+
+        function selectAll() {
+            items.addClass('ngparaconsentactive');
+            updateCookie();
+        }
+
+        function deselectAll() {
+            items.removeClass('ngparaconsentactive');
+            updateCookie();
+        }
+
+        updateDisplay();
+
+        items.on('click', toggleConsent);
+        buttonAll.on('click', selectAll);
+        buttonNone.on('click', deselectAll);
+        items.height();
+        items.addClass('ngparaconsenttoggleconsentanimate');
+
+    };
+})(jQuery);
+
+$(function () {
+    $('.ngparaconsent').ngConsent();
+});

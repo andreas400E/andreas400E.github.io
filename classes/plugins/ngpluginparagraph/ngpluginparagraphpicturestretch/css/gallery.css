@@ -1,0 +1,175 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.ngparaphotostory > .ngparaphotostorycenter > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.ngparaphotostory > .ngparaphotostorycenter > ul > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.ngparaphotostory > .ngparaphotostorytop > div > h1 {
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-weight: normal;
+    font-size: 175%;
+}
+
+.ngparaphotostory > .ngparaphotostorytop > div > p {
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+.ngparaphotostory > .ngparaphotostorytop > div > span {
+    display: block;
+    padding: 0 0 20px 0;
+}
+
+.ngparaphotostory a.ngparaphotostoryclose {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+
+@media print, screen and (max-width: 1023px) {
+    .ngparaphotostory a.ngparaphotostorynext,
+    .ngparaphotostory a.ngparaphotostoryprev,
+    .ngparaphotostory > .ngparaphotostorybottom,
+    .ngparaphotostory > .ngparaphotostorytop > div > span
+    {
+        display: none;
+    }
+
+    .ngparaphotostory > .ngparaphotostorycenter > ul > li > img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .ngparaphotostory > .ngparaphotostorytop {
+        padding: 40px 20px 20px 20px;
+
+    }
+    .ngparaphotostory > .ngparaphotostorycenter > ul > li > span {
+        padding: 10px 20px 30px 20px;
+        display: block;
+    }
+
+    .ngparaphotostory a.ngparaphotostoryclose {
+        right: 8px;
+        top: 8px;
+    }
+
+}
+
+@media print, screen and (min-width: 1024px) {
+
+    .ngparaphotostory a.ngparaphotostoryclose {
+        right: 16px;
+        top: 16px;
+    }
+
+    .ngparaphotostory a.ngparaphotostorynext {
+        width: 64px;
+        height: 64px;
+        background-repeat: no-repeat;
+        background-position: 16px 16px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -32px;
+    }
+
+    .ngparaphotostory a.ngparaphotostoryprev {
+        width: 64px;
+        height: 64px;
+        background-repeat: no-repeat;
+        background-position: 16px 16px;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        margin-top: -32px;
+    }
+
+    .ngparaphotostory > .ngparaphotostorytop {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        left: 10%;
+        height: 25%;
+    }
+
+    .ngparaphotostory > .ngparaphotostorytop > div {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .ngparaphotostory > .ngparaphotostorybottom {
+        position: absolute;
+        top: 85%;
+        width: 80%;
+        left: 10%;
+        height: 15%;
+    }
+
+    .ngparaphotostory > .ngparaphotostorybottom > span {
+        padding: 20px 0;
+        display: block;
+    }
+
+    .ngparaphotostory > .ngparaphotostorycenter {
+        position: absolute;
+        top: 25%;
+        height: 60%;
+        overflow: hidden;
+        left: 0;
+        width: 100%;
+    }
+
+    .ngparaphotostory > .ngparaphotostorycenter > ul {
+        position: absolute;
+    }
+
+    .ngparaphotostory > .ngparaphotostorycenter > ul > li {
+        position: absolute;
+    }
+
+    .ngparaphotostory > .ngparaphotostorycenter > ul > li > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ngparaphotostory > .ngparaphotostorycenter > ul > li > span {
+        display: none;
+    }
+
+}
+
+@media print, screen and (min-width: 1280px) {
+    .ngparaphotostory > .ngparaphotostorytop {
+        height: 20%;
+    }
+
+    .ngparaphotostory > .ngparaphotostorybottom {
+        top: 80%;
+        height: 20%;
+    }
+
+    .ngparaphotostory > .ngparaphotostorycenter {
+        top: 20%;
+        height: 60%;
+    }
+}

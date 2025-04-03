@@ -1,0 +1,266 @@
+div.tablecontainer {
+	overflow: auto;
+}
+
+table.paragraphtable svg.paragraphtableicon {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    color: #5a5a5a;
+}
+
+table.paragraphtable ul {
+    margin: 0;
+    padding:5px 0 5px 20px;
+}
+
+table.paragraphtable li {
+    margin: 0;
+}
+
+table.paragraphtable.form {
+    margin: 0;
+}
+
+table.paragraphtable form svg {
+    width: 1.2em;
+    height: 1.2em;
+    display: block;
+}
+
+table.paragraphtable a.paragraphtablebutton,
+table.paragraphtable button {
+    display: inline-block;
+    margin: 6px;
+   	border-color: #464646;
+	border-width: 0px;
+	border-style: solid;
+	padding: 10px 20px 10px 20px;
+	background: #464646;
+	font: 15px 'Open Sans',Verdana,Helvetica,sans-serif;
+	color: #ffffff;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	cursor: pointer;
+    -webkit-appearance: none;
+    text-decoration: none;
+}
+
+table.paragraphtable a.paragraphtablebutton:hover,
+table.paragraphtable button:hover {
+	border-color: #000000;
+	background: #000000;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+table.paragraphtable a.paragraphtablebutton:focus,
+table.paragraphtable button:focus
+{
+    outline: none;
+}
+
+
+table.paragraphtable
+{
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+table.paragraphtable span.paragraphtablecheck {
+	width: 15px;
+	background: url(../img/index.html%3Ff=check&c=5a5a5a);
+	display: inline-block;
+	vertical-align: middle;
+	height: 15px;
+}
+
+table.paragraphtable td,
+table.paragraphtable th
+{
+	border-color: #ebebeb;
+	border-width: 1px;
+	border-style: solid;
+	padding: 6px 12px 6px 12px;
+	background: #ffffff;
+	line-height: 100%;
+	text-align: left;
+	vertical-align: top;
+	font: 15px 'Open Sans',Verdana,Helvetica,sans-serif;
+	color: #5a5a5a;
+	letter-spacing: 0px;
+
+}
+
+
+table.paragraphtablealtrows tbody tr:nth-child(even) td {
+	background: #fcfcfc;
+}
+
+table.paragraphtablealtcols tbody tr td:nth-child(even) {
+	background: #fcfcfc;
+}
+
+
+table.paragraphtable td.header,
+table.paragraphtable th.header,
+table.paragraphtablealtcols tbody tr td.header:nth-child(even),
+table.paragraphtablealtrows tbody tr:nth-child(even) td.header
+{
+	border-color: #ebebeb;
+	border-width: 1px;
+	border-style: solid;
+	padding: 6px 12px 6px 12px;
+	background: #ffffff;
+	font: bold 15px 'Open Sans',Verdana,Helvetica,sans-serif;
+	color: #828282;
+	letter-spacing: 0px;
+}
+
+table.paragraphtable p {
+	margin: 0;
+	padding: 0;
+}
+
+table.paragraphtable a img {
+	border: none;
+	display: block;
+}
+
+table.paragraphtable th svg.paragraphtablesort {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: -0.2em;
+    margin-left: 0.4em;
+    border: 0;
+    padding: 0;
+    transition: transform 0.4s;
+}
+
+table.paragraphtable th.paragraphtablesortnone,
+table.paragraphtable th.paragraphtablesortup,
+table.paragraphtable th.paragraphtablesortdown {
+    user-select: none;
+    white-space: nowrap;
+}
+
+table.paragraphtable th.paragraphtablesortnone p,
+table.paragraphtable th.paragraphtablesortup p,
+table.paragraphtable th.paragraphtablesortdown p {
+    cursor: pointer;
+}
+
+table.paragraphtable th.paragraphtablesortdown svg.paragraphtablesort {
+    transform: rotate(180deg);
+}
+
+table.paragraphtable th.paragraphtablesortup svg path,
+table.paragraphtable th.paragraphtablesortdown svg path
+{
+    fill: currentColor;
+}
+
+table.paragraphtable th select,
+table.paragraphtable th input
+{
+    box-sizing: border-box;
+	border-color: #ebebeb;
+	border-width: 1px;
+	border-style: solid;
+	padding: 6px 12px 6px 12px;
+	background: #ffffff;
+	font: 15px 'Open Sans',Verdana,Helvetica,sans-serif;
+	color: #464646;
+	letter-spacing: 0px;
+	border-radius: 0px;
+	width: 100%;
+	display: block;
+	margin: 6px 0 0 0;
+}
+
+table.paragraphtable th select,
+table.paragraphtable th select:focus
+ {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225%22%20height%3D%2216%22%20viewBox%3D%220%200%2025.00%2016.00%22%20enable-background%3D%22new%200%200%2025.00%2016.00%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23464646%22%20d%3D%22M%206.36396%2C12.7782L%204.94975%2C11.364L%200%2C6.41422L%201.41421%2C5L%206.36396%2C9.94975L%2011.3137%2C5L%2012.7279%2C6.41421L%207.77817%2C11.364L%206.36396%2C12.7782%20Z%20%22%2F%3E%3C%2Fsvg%3E");
+   background-repeat: no-repeat;
+   background-position: right center;
+   padding-right: 30px;
+}
+
+table.paragraphtable th select:focus,
+table.paragraphtable th input:focus {
+    outline: auto;
+}
+
+
+table.paragraphtable th select::-ms-expand {
+    display: none;
+}
+
+table.paragraphtable th input {
+   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225%22%20height%3D%2216%22%20viewBox%3D%220%200%2025.00%2016.00%22%20enable-background%3D%22new%200%200%2025.00%2016.00%22%3E%3Cpath%20fill%3D%22%23464646%22%20d%3D%22M%202.98989%2C2.98989C%204.97641%2C1.00337%208.19719%2C1.00337%2010.1837%2C2.98989C%2011.9239%2C4.73004%2012.1397%2C7.41731%2010.8311%2C9.39238L%2014.5%2C13.0612L%2013.0612%2C14.5L%209.39238%2C10.8311C%207.41731%2C12.1397%204.73004%2C11.9239%202.98989%2C10.1837C%201.00337%2C8.19719%201.00337%2C4.97641%202.98989%2C2.98989%20Z%20M%204.42865%2C4.42865C%203.23674%2C5.62057%203.23674%2C7.55304%204.42865%2C8.74495C%205.62056%2C9.93686%207.55303%2C9.93686%208.74495%2C8.74495C%209.93686%2C7.55304%209.93686%2C5.62057%208.74495%2C4.42865C%207.55304%2C3.23675%205.62056%2C3.23674%204.42865%2C4.42865%20Z%20%22%2F%3E%3C%2Fsvg%3E");
+   background-repeat: no-repeat;
+   background-position: right center;
+   padding-right: 30px;
+}
+
+
+@media (max-width: 767px) {
+  .sqr .paragraphtablepivot thead {
+    display: none;
+  }
+  .sqr .paragraphtablepivot td {
+    display: block;
+    width: 100% !important;
+	border-color: #ebebeb;
+	border-width: 1px;
+	border-style: solid;
+	border-top: none;
+	box-sizing: border-box;
+	text-align: left !important;
+  }
+  
+  .sqr .paragraphtablepivot img {
+    margin-top: 6px;
+  }
+  
+  .sqr .paragraphtablepivot td:before {
+    content: attr(data-header) ": ";
+    font-style: italic;
+    display: block;
+  }
+  .sqr .paragraphtablepivot tr {
+    display: block;
+    border: none;
+  }
+  .sqr .paragraphtablepivot td:first-child {
+	border-color: #ebebeb;
+	border-width: 1px;
+	border-style: solid;
+	padding: 6px 12px 6px 12px;
+	background: #ffffff;
+	font: bold 15px 'Open Sans',Verdana,Helvetica,sans-serif;
+	color: #828282;
+	letter-spacing: 0px;
+  }
+  .sqr .paragraphtablepivot td:last-child {
+    border-bottom: none;
+  }
+  
+  .sqr .paragraphtablepivot {
+ 	border-bottom-color: #ebebeb;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+  }
+  
+  .sqr .paragraphtablepivot td:first-child:before {
+    content: '';
+  }
+
+}

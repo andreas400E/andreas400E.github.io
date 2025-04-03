@@ -1,0 +1,117 @@
+ul.ngpicturematrix
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.ngpicturematrix li
+{
+	display: block;
+	float: left;
+	box-sizing: border-box;
+}
+
+ul.ngpicturematrix li.nghide
+{
+	display: none;
+}
+
+ul.ngpicturematrix img
+{
+	display: block;
+	float: left;
+	border: none;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+}
+
+ul.ngpicturematrix a:focus-visible img {
+	filter: brightness(50%) contrast(75%);
+}
+
+ul.ngpicturematrixnav
+{
+	clear: both;
+	list-style: none;
+	margin: 0;
+	padding: 10px 0;
+}
+
+ul.ngpicturematrixnav li
+{
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0 3px 0 0;
+}
+
+ul.ngpicturematrixnav li a 
+{
+	display: block;
+	border-width: 1px;
+	border-style: solid;
+	padding: 3px 6px;
+	text-decoration: none;
+}
+
+
+
+
+
+
+.ngpicturematrix1cols li {
+	width: 100%;
+	margin-bottom: 0.5%;
+}
+
+.ngpicturematrix2cols li {
+	width: 49.5%;
+	margin-right: 0.5%;
+	margin-bottom: 0.5%;
+}
+
+.ngpicturematrix2cols li:nth-child(2n+0) {
+	margin-right: 0%;
+}
+
+.ngpicturematrix3cols li {
+	width: 33%;
+	margin-right: 0.5%;
+	margin-bottom: 0.5%;
+}
+
+.ngpicturematrix3cols li:nth-child(3n+0) {
+	margin-right: 0%;
+}
+
+.ngpicturematrix4cols li {
+	width: 24.625%;
+	margin-right: 0.5%;
+	margin-bottom: 0.5%;
+}
+
+.ngpicturematrix4cols li:nth-child(4n+0) {
+	margin-right: 0%;
+}
+
+.ngpicturematrix5cols li {
+	width: 19.6%;
+	margin-right: 0.5%;
+	margin-bottom: 0.5%;
+}
+
+.ngpicturematrix5cols li:nth-child(5n+0) {
+	margin-right: 0%;
+}
+
+@media (max-width: 767px) {
+	.sqr .ngpicturematrix2cols li,
+	.sqr .ngpicturematrix3cols li,
+	.sqr .ngpicturematrix4cols li,
+	.sqr .ngpicturematrix5cols li {
+		width: 100%;
+		margin-right: 0%;
+	}
+}

@@ -1,0 +1,40 @@
+ul.ngflexmatrix
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+ul.ngflexmatrix li
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	overflow: hidden;
+}
+
+ul.ngflexmatrix li img
+{
+	display: block;
+	position: absolute;
+	border: none;
+}
+
+ul.ngflexmatrix li a:focus-visible img
+{
+	filter: brightness(50%) contrast(75%);
+}
+
+ul.ngflexmatrix li em
+{
+	display: block;
+	position: absolute;
+	bottom: -40px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	padding: 5px;
+	width: 100%;
+	font-style: normal;
+}

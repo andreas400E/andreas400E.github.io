@@ -1,0 +1,181 @@
+.ngcookiewarningmask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    z-index: 3000;
+    display: none;
+}
+
+.ngcookiewarning {
+  position: fixed;
+  z-index: 3000;
+  left: 0px;
+  right: 0px;
+  background-color: #ffffff;
+  border-radius: 0px;
+  padding: 30px;
+  display: none;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  outline: none;
+}
+
+.ngcookiewarningcontent {
+    display: flex;
+    align-items: flex-end;
+}
+
+.ngcookiewarningtext {
+    flex-grow: 1;
+}
+
+.ngcookiewarningtop {
+	top: 0px;
+}
+
+.ngcookiewarningbottom {
+	bottom: 0px;
+}
+
+
+.ngcookiewarning button, .ngcookiewarning .ngcookiewarningsettings {
+	border-color: #464646;
+	border-width: 0px;
+	border-style: solid;
+	padding: 10px 20px 10px 20px;
+	background: #464646;
+	font: 15px 'Open Sans',Verdana,Helvetica,sans-serif;
+	color: #ffffff;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	display: block;
+	cursor: pointer;
+    -webkit-appearance: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.ngcookiewarning button:hover,
+.ngcookiewarning .ngcookiewarningsettings:hover
+{	
+	border-color: #000000;
+	background: #000000;
+	font-weight: normal;
+	
+	font-style: normal;
+	
+	text-transform: uppercase;
+	
+	color: #ffffff;
+}
+
+.ngcookiewarning button:focus,
+.ngcookiewarning .ngcookiewarningsettings:focus
+{
+    outline: none;
+}
+
+.ngcookiewarning p:first-child {
+  margin-top: 0;
+}
+
+.ngcookiewarning p:last-child {
+  margin-bottom: 0;
+}
+
+
+a.ngcookieallow
+{
+	border-color: #464646;
+	border-width: 0px;
+	border-style: solid;
+	padding: 10px 20px 10px 20px;
+	background: #464646;
+	font: 15px 'Open Sans',Verdana,Helvetica,sans-serif;
+	color: #ffffff;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	border-radius: 0px;
+	display: inline-block;
+	cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    text-decoration: none;
+}
+
+a.ngcookieallow:hover
+{
+	border-color: #000000;
+	background: #000000;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.ngcookieallow:focus
+{
+    outline: none;
+}
+
+.ngcookiewarning .ngcookiewarningbuttons {
+    display: flex;
+}
+
+.ngcookiewarningtext {
+    margin: 0 30px 0 0;
+}
+
+@media (min-width: 1280px) {
+    .ngcookiewarning .ngcookiewarningbuttons {
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .ngcookiewarning button, .ngcookiewarning .ngcookiewarningsettings {
+        width: 100%;
+   }
+
+   .ngcookiewarning .ngcookiewarningbuttons {
+        row-gap: 10px;
+        flex-flow: column;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .ngcookiewarningtext {
+        margin: 0 0 30px 0;
+    }
+
+
+    .ngcookiewarning p {
+        max-width: 100%;
+        float: none;
+    }
+
+   .ngcookiewarning {
+      left: 0px;
+      right: 0px;
+    }
+
+    .ngcookiewarningtop {
+        top: 0px;
+    }
+
+    .ngcookiewarningbottom {
+        bottom: 0px;
+    }
+
+    .ngcookiewarningcontent {
+        display: block;
+    }
+
+}

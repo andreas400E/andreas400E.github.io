@@ -1,0 +1,60 @@
+.paragraphsidebarleft a:focus-visible img,
+.paragraphsidebarright a:focus-visible img {
+	filter: brightness(50%) contrast(75%);
+}
+
+@media (min-width: 768px) {
+	.paragraphsidebarright {
+		float: right;
+		margin: 0 0 2% 5%;
+		box-sizing: border-box;
+	}
+	.paragraphsidebarleft {
+		float: left;
+		margin: 0 5% 2% 0;
+		box-sizing: border-box;
+	}
+	.paragraphsidebarsmall {
+		width: 20%;
+	}
+	.paragraphsidebarmedium {
+		width: 30%;
+	}
+	.paragraphsidebarlarge {
+		width: 40%;
+	}
+	.paragraphsidebarverylarge {
+		width: 50%;
+	}
+	
+	.paragraphcontentsidebarsmall {
+		width: 75%;
+	}
+	.paragraphcontentsidebarmedium {
+		width: 65%;
+	}
+	.paragraphcontentsidebarlarge {
+		width: 55%;
+	}
+	.paragraphcontentsidebarverylarge {
+		width: 45%;
+	}
+	
+	.paragraphcontentindentsidebarsmall {
+		margin-left: 25%;
+		width: 75%;
+	}
+	.paragraphcontentindentsidebarmedium {
+	    margin-left: 35%;
+		width: 65%;
+	}
+	.paragraphcontentindentsidebarlarge {
+		margin-left: 45%;
+		width: 55%;
+	}
+	.paragraphcontentindentsidebarverylarge {
+		margin-left: 55%;
+		width: 45%;
+	}
+	
+}

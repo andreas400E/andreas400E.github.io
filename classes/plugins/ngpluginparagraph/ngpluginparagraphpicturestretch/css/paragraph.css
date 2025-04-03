@@ -1,0 +1,37 @@
+.ngparapicturestretch {
+    position: relative;
+}
+
+.ngparapicturestretch img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ngparapicturestretch div {
+    position: absolute;
+    display: block;
+    width: auto;
+    background-color: rgba(0,0,0,0.3);
+    bottom:0;
+    left:0;
+    padding: 16px 24px 16px 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:focus-visible>.ngparapicturestretch>img {
+    filter: brightness(50%) contrast(75%);
+}
+
+.ngparapicturestretch svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+@media (max-width: 767px) {
+    .ngparapicturestretch span {
+        display: none;
+    }
+}

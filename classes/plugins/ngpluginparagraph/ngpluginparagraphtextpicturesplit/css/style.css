@@ -1,0 +1,133 @@
+.ngparatextpicturesplit:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.ngparatextpicturesplitright .ngparatextpicturesplitpicture,
+	.ngparatextpicturesplitleft .ngparatextpicturesplittext {
+	float: right;
+}
+
+.ngparatextpicturesplitright .ngparatextpicturesplittext,
+	.ngparatextpicturesplitleft .ngparatextpicturesplitpicture {
+	float: left;
+}
+
+.ngparatextpicturesplitpicture {
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	width: 50%;
+}
+
+.ngparatextpicturesplitpicture img {
+	display: block;
+	position: absolute;
+}
+
+.ngparatextpicturesplitpicture a:focus-visible img {
+	filter: brightness(50%) contrast(75%);
+}
+
+.ngparatextpicturesplittext {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.ngparatextpicturesplittext img {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 33%;
+	height: auto;
+	z-index: -1;
+}
+
+.ngparatextpicturesplittext>div {
+	box-sizing: border-box;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+}
+
+.ngparatextpicturesplittext>div>p:first-of-type {
+	margin-top: 0;
+}
+
+.ngparatextpicturesplittext>div>p:last-of-type {
+	margin-bottom: 0;
+}
+
+.ngparatextpicturesplitfxshrink {
+	transform: scale(1.2);
+	opacity: 0;
+	transition: transform 1s, opacity 1s;
+}
+
+.ngparatextpicturesplitfxgrow {
+	transform: scale(0.8);
+	opacity: 0;
+	transition: transform 1s, opacity 1s;
+}
+
+.ngparatextpicturesplitfxfade {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.ngparatextpicturesplitfxup {
+	transform: translateY(20px);
+	opacity: 0;
+	transition: transform 1s, opacity 1s;
+}
+
+.ngparatextpicturesplitfxdown {
+	transform: translateY(-20px);
+	opacity: 0;
+	transition: transform 1s, opacity 1s;
+}
+
+.ngparatextpicturesplitfxright {
+	transform: translateX(-20px);
+	opacity: 0;
+	transition: transform 1s, opacity 1s;
+}
+
+.ngparatextpicturesplitfxleft {
+	transform: translateX(20px);
+	opacity: 0;
+	transition: transform 1s, opacity 1s;
+}
+
+.ngparatextpicturesplitfxshow>div>div {
+	transform: none;
+	opacity: 1;
+}
+
+@media (max-width: 767px) {
+	.sqr .ngparatextpicturesplitright .ngparatextpicturesplitpicture,
+	.sqr .ngparatextpicturesplitleft .ngparatextpicturesplittext,
+	.sqr .ngparatextpicturesplitright .ngparatextpicturesplittext,
+	.sqr .ngparatextpicturesplitleft .ngparatextpicturesplitpicture {
+		float: none;
+	}
+	.sqr .ngparatextpicturesplitpicture {
+		width: 100%;
+	}
+	.sqr .ngparatextpicturesplittext {
+		width: 100%;
+	}
+	.sqr .ngparatextpicturesplitpicture img {
+		position: static;
+	}
+}

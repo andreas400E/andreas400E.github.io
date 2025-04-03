@@ -1,0 +1,127 @@
+.ngparaconsent>ul {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ngparaconsent>ul>li {
+    display: block;
+    margin: 0;
+    padding: 0 0 20px 0;
+    list-style: none;
+}
+
+.ngparaconsent>ul>li>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.ngparaconsent>ul>li>div>.ngparaconsenttoggleconsent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #464646;
+    user-select: none;
+    padding-left: 20px;
+    flex-shrink: 0;
+}
+
+.ngparaconsent>ul>li>div>a>span.ngparaconsentlabelactive {
+    display: none;
+}
+
+.ngparaconsent>ul>li>div>a>span.ngparaconsentlabelnotactive {
+    display: block;
+}
+
+.ngparaconsent>ul>li>div>a.ngparaconsentactive>span.ngparaconsentlabelactive {
+    display: block;
+}
+
+.ngparaconsent>ul>li>div>a.ngparaconsentactive>span.ngparaconsentlabelnotactive {
+    display: none;
+}
+
+.ngparaconsent>ul>li>div>.ngparaconsenttoggleconsent>div {
+    height: 24px;
+    width: 36px;
+    background-color: #a65856;
+    border-radius: 12px;
+    position: relative;
+    margin-left: 20px;
+
+}
+
+.ngparaconsenttoggleconsentanimate>div {
+    transition: background-color 0.3s ease;
+}
+
+.ngparaconsent>ul>li>div>.ngparaconsenttoggleconsent>div>div {
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.ngparaconsenttoggleconsentanimate>div>div {
+    transition: left 0.3s ease;
+}
+
+
+.ngparaconsent>ul>li>div>a.ngparaconsentactive>div {
+    background-color: #8ba15d;
+}
+
+.ngparaconsent>ul>li>div>div.ngparaconsenttoggleconsent>div {
+    background-color: #9b9b9b;
+}
+
+.ngparaconsent>ul>li>div>a.ngparaconsentactive>div>div,
+.ngparaconsent>ul>li>div>div.ngparaconsenttoggleconsent>div>div {
+    left: 14px;
+}
+
+.ngparaconsent>div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ngparaconsent button
+{
+	border-color: #464646;
+	border-width: 0px;
+	border-style: solid;
+	padding: 10px 20px 10px 20px;
+	background: #464646;
+	font: 15px 'Open Sans',Verdana,Helvetica,sans-serif;
+	color: #ffffff;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	border-radius: 0px;
+	display: block;
+	cursor: pointer;
+    -webkit-appearance: none;
+    margin: 0 0 10px 10px;
+}
+
+.ngparaconsent button:hover
+{
+	border-color: #000000;
+	background: #000000;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.ngparaconsent button:focus
+{
+    outline: none;
+}

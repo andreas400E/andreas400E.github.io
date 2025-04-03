@@ -1,0 +1,118 @@
+.ngparaproslider {
+    width: 100%;
+    position: relative;
+}
+
+.ngparaproslider ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.ngparaproslider ul > li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+    position: absolute;
+}
+
+.ngparaproslider ul > li > img {
+    width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+.ngparaproslider .ngparaproslidernext,
+.ngparaproslider .ngparaprosliderprev {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+
+.ngparaproslider .ngparaproslidernext {
+    right: 0;
+}
+
+.ngparaproslider .ngparaprosliderprev {
+    left: 0;
+}
+
+.ngparaproslider .ngparaproslidernext > img,
+.ngparaproslider .ngparaprosliderprev > img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: block;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    user-select: none;
+}
+
+.ngparaproslider .ngparaproslidernext > img {
+    left: 0;
+}
+
+.ngparaproslider .ngparaprosliderprev > img {
+    right: 0;
+}
+
+.ngparaprosliderbullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ngparaprosliderbullets div {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    transition: opacity 0.2s;
+}
+
+.ngparaprosliderbullets div.ngparaprosliderbulletcurrent {
+    opacity: 0.8;
+}
+
+.ngparaproslidermore a
+{
+	border-color: #464646;
+	border-width: 0px;
+	border-style: solid;
+	padding: 10px 20px 10px 20px;
+	background: #464646;
+	font: 15px 'Open Sans',Verdana,Helvetica,sans-serif;
+	color: #ffffff;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	border-radius: 0px;
+	display: inline-block;
+	cursor: pointer;
+    float: right;
+    -webkit-appearance: none;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.ngparaproslidermore:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ngparaproslidermore a:hover
+{
+	border-color: #000000;
+	background: #000000;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
+}

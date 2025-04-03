@@ -1,0 +1,252 @@
+ul.sqrpluginpictures {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul.sqrpluginpictures:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul.sqrpluginpictures > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+}
+
+ul.sqrpluginpictures > li:last-child {
+    margin-right: 0;
+}
+
+ul.sqrpluginpicturesc1m0 > li,
+ul.sqrpluginpicturesc1m1 > li,
+ul.sqrpluginpicturesc1m2 > li,
+ul.sqrpluginpicturesc1m3 > li {
+    width: 100%;
+}
+
+ul.sqrpluginpicturesc2m0 > li {
+    width: 50%;
+}
+
+ul.sqrpluginpicturesc2m1 > li {
+    width: 49.5%;
+    margin-right: 1%;
+}
+
+ul.sqrpluginpicturesc2m2 > li {
+    width: 49%;
+    margin-right: 2%;
+}
+
+ul.sqrpluginpicturesc2m3 > li {
+    width: 48.5%;
+    margin-right: 3%;
+}
+
+ul.sqrpluginpicturesc3m0 > li {
+    width: 33.33333%;
+}
+
+ul.sqrpluginpicturesc3m1 > li {
+    width: 32.66666%;
+    margin-right: 1%;
+}
+
+ul.sqrpluginpicturesc3m2 > li {
+    width: 32%;
+    margin-right: 2%;
+}
+
+ul.sqrpluginpicturesc3m3 > li {
+    width: 31.333333%;
+    margin-right: 3%;
+}
+
+ul.sqrpluginpicturesc4m0 > li {
+    width: 25%;
+}
+
+ul.sqrpluginpicturesc4m1 > li {
+    width: 24.25%;
+    margin-right: 1%;
+}
+
+ul.sqrpluginpicturesc4m2 > li {
+    width: 23.5%;
+    margin-right: 2%;
+}
+
+ul.sqrpluginpicturesc4m3 > li {
+    width: 22.75%;
+    margin-right: 3%;
+}
+
+ul.sqrpluginpicturesc5m0 > li {
+    width: 20%;
+}
+
+ul.sqrpluginpicturesc5m1 > li {
+    width: 19.2%;
+    margin-right: 1%;
+}
+
+ul.sqrpluginpicturesc5m2 > li {
+    width: 18.4%;
+    margin-right: 2%;
+}
+
+ul.sqrpluginpicturesc5m3 > li {
+    width: 17.6%;
+    margin-right: 3%;
+}
+
+ul.sqrpluginpictures > li > div {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+ul.sqrpluginpicturesratio2by1 > li > div {
+    padding-bottom: 50%;
+}
+
+ul.sqrpluginpicturesratio3by1 > li > div {
+    padding-bottom: 33.33333%;
+}
+
+ul.sqrpluginpicturesratio16by9 > li > div {
+    padding-bottom: 56.25%;
+}
+
+ul.sqrpluginpicturesratio3by2 > li > div {
+    padding-bottom: 66.67%;
+}
+
+ul.sqrpluginpicturesratio4by3 > li > div {
+    padding-bottom: 75%;
+}
+
+ul.sqrpluginpicturesratio1by1 > li > div {
+    padding-bottom: 100%;
+}
+
+ul.sqrpluginpicturesratio3by4 > li > div {
+    padding-bottom: 133.33333%;
+}
+
+ul.sqrpluginpicturesratio2by3 > li > div {
+    padding-bottom: 150%;
+}
+
+ul.sqrpluginpicturesratio1by2 > li > div {
+    padding-bottom: 200%;
+}
+
+ul.sqrpluginpicturesratio1by3 > li > div {
+    padding-bottom: 300%;
+}
+
+
+ul.sqrpluginpictures > li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale3d(1, 1, 1);
+    transition: transform 1s ease;
+    z-index: 1;
+}
+
+ul.sqrpluginpicturesanimate > li a:hover img {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+ul.sqrpluginpictures > li a:focus-visible img {
+    filter: brightness(50%) contrast(75%);
+}
+
+
+ul.sqrpluginpictures > li > div div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+ul.sqrpluginpictures > li > div div span {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.sqrpluginpicturescenter > span {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.sqrpluginpicturestopleft > span {
+    top: 0;
+    left: 0;
+}
+
+.sqrpluginpicturestopright > span {
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+.sqrpluginpicturesbottomleft > span {
+    bottom: 0;
+    left: 0;
+}
+
+.sqrpluginpicturesbottomright > span {
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    ul.sqrpluginpictures > li {
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    ul.sqrpluginpicturesc1m1 > li,
+    ul.sqrpluginpicturesc2m1 > li,
+    ul.sqrpluginpicturesc3m1 > li,
+    ul.sqrpluginpicturesc4m1 > li,
+    ul.sqrpluginpicturesc5m1 > li {
+        margin-bottom: 1%;
+    }
+
+    ul.sqrpluginpicturesc1m2 > li,
+    ul.sqrpluginpicturesc2m2 > li,
+    ul.sqrpluginpicturesc3m2 > li,
+    ul.sqrpluginpicturesc4m2 > li,
+    ul.sqrpluginpicturesc5m2 > li {
+        margin-bottom: 2%;
+    }
+
+    ul.sqrpluginpicturesc1m3 > li,
+    ul.sqrpluginpicturesc2m3 > li,
+    ul.sqrpluginpicturesc3m3 > li,
+    ul.sqrpluginpicturesc4m3 > li,
+    ul.sqrpluginpicturesc5m3 > li {
+        margin-bottom: 3%;
+    }
+}

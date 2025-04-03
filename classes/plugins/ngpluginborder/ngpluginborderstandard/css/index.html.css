@@ -1,0 +1,24 @@
+.paragraphborder_default
+{
+	min-height: 1px;
+	margin: 0px;
+	padding: 12px;
+	background: #ffffff;
+	border-color: #ebebeb;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.sqrallwaysfullwidth>.paragraph>.paragraphborder_default {
+	border-left-width: 0;
+	border-right-width: 0;
+	padding: 0;	
+}
+
+@media (max-width: 1023px) {
+	.sqrmobilefullwidth>.paragraph>.paragraphborder_default {
+		border-left-width: 0;
+		border-right-width: 0;
+		padding: 0;	
+	}
+}
